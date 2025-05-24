@@ -52,7 +52,7 @@ export default withZephyr()({
     new rspack.HtmlRspackPlugin({
       template: './index.html',
     }),
-    isDev ? new RefreshPlugin() : null,
+    isDev ? new RefreshPlugin.default() : null,
   ].filter(Boolean),
   optimization: {
     minimizer: [

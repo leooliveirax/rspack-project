@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
+import reactLogo from './assets/react.svg';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,13 +12,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Rspack + React + TypeScript</h1>
+      <h1>Rspack + React + Zephyr</h1>
       <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
